@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Essentials: Chopping Boards and Ceramic Cups and Mugs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="knobsandahndles.html">Knobs and Handles</a>|</li>
+<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
+<li><a href="statementpieces.html">Statement Pieces</a>|</li>
+<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
+<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
+<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
+<li><a href="coaster.html">Coaster</a>|</li>
+<li><a href="wallart.html">Wall Art</a>|</li>
+<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
+<li><a href="lamps.html">Lamps</a>|</li>
+<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
+<li><a href="doorstopper.html">Door Stopper</a>|</li>
+<li><a href="kitchenware.html">Kitchenware</a>|</li>
+<li><a href="copperutensils.html">Copper Utensils</a>|</li>
+<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+            <h1>Kitchen Essentials: Chopping Boards and Ceramic Cups and Mugs</h1>
+            <img src="https://d2ma7w4w9grdob.cloudfront.net/media/48649Designer-Handcraft-Ceramic-Multicolour-Coffee-Mug-In-Set-Of-4-CUP-30-(1).JPG" alt="ceramic cups"></a>
+
+            <p><a href=”https://www.indianshelf.in/kitchenware/”>Kitchenware</a> is essential for any home cook. From chopping boards to ceramic cups and mugs, there are a variety of kitchen essentials that can make cooking and eating more enjoyable.if you are a designer or Wholesale buyer you can <a href="https://www.indianshelf.in/kitchenware/">buy kitchware items in bulk</a> from us</p>
+
+
+<h2>Chopping Boards</h2>
+<p><a href="https://www.indianshelf.in/chopping-boards/">Chopping boards</a> are a must-have for any kitchen. They provide a safe and sanitary surface for cutting food, and they can also be used to serve food. There are many different types of chopping boards available, made from a variety of materials, including wood, plastic, and bamboo.</p>
+  <h3>Wooden Chopping Boards</h3>
+<p>
+  Wooden chopping boards are a classic choice for kitchens. They are durable and can withstand years of use. However, they can be difficult to clean and can harbor bacteria if not properly cared for.
+  </p>
+  <h3>End-Grain Chopping Boards</h3>
+  <p>
+    These are made from the end grain of wood, which means that the grain runs perpendicular to the surface of the board. This makes them more durable and less likely to harbor bacteria than other types of chopping boards.
+  </p>
+  <h3>Plastic Chopping Boards</h3>
+  <p>
+    Plastic chopping boards are a more affordable option than wooden chopping boards. They are also easier to clean and less likely to harbor bacteria. However, they are not as durable as wooden chopping boards and can become scratched or warped over time.
+  </p>
+  <h3>Silicone Chopping Boards</h3>
+  <p>
+    These are a flexible and non-slip option that is easy to clean. They are also dishwasher safe. However, they are not as durable as other types of chopping boards and can be difficult to use with sharp knives.
+  </p>
+  <h3>Bamboo Chopping Boards</h3>
+  <p>
+    Bamboo chopping boards are a newer option that combines the durability of wood with the ease of cleaning of plastic. They are also naturally antimicrobial, which means they are less likely to harbor bacteria.
+  </p>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/60201-WoodenChoppingBoardHandleandFloralBorder.jpg" alt="wooden chopping board"></a>
+<h2>Ceramic Cups and Mugs</h2>
+<p><a href="https://www.indianshelf.in/ceramic-cup-and-mug/">Ceramic cups</a> and mugs are a versatile kitchen essential. They can be used for drinking coffee, tea, or other beverages, and they can also be used to heat food in the microwave. Ceramic cups and mugs are also relatively durable, so they can withstand years of use.</p>
+  <h3>Ceramic Cups</h3>
+  <p>
+    Ceramic cups are a classic choice for drinking coffee or tea. They are also long-lasting and heat-resistant. They are also relatively affordable.
+  </p>
+  <h3>Ceramic Mugs</h3>
+    <p>
+      Ceramic mugs are a larger version of ceramic cups. They are often used for drinking hot beverages, such as coffee or tea. They can also be used to hold soup or other hot foods.
+    </p>
+  <h3>Porcelain Cups and Mugs</h3>
+  <p>
+    Porcelain is a type of ceramic that is known for its smooth, white finish. Porcelain cups and mugs are often more expensive than ceramic cups and mugs, but they are also more durable and easier to clean.
+  </p>
+  <h3>Bone China Cups and Mugs</h3>
+  <p>
+    Bone china is a type of porcelain that is made with bone ash. It is the most delicate type of ceramic, but it is also the most beautiful. Bone china cups and mugs are often used for special occasions.
+  </p>
+
+<h2>Tips for Choosing Kitchenware</h2>
+<ul>
+  <li>The material</li>
+  <p>The material of the kitchenware will affect its durability, heat retention, and ease of cleaning. For example, wooden chopping boards are more durable than plastic chopping boards, but they are also more difficult to clean.</p>
+  <li>The size</li>
+  <p>The size of the kitchenware will depend on your needs. For example, if you cook for a large family, you will need larger kitchenware.</p>
+  <li>The design</li>
+  <p>The design of the kitchenware should complement your kitchen décor. For example, if you have a modern kitchen, you may want to choose kitchenware with a sleek, minimalist design.</p>
+<h2>Conclusion</h2>
+<p>Chopping boards and ceramic cups and mugs are two essential kitchen items that can make cooking and eating more enjoyable. When choosing <a href="https://www.indianshelf.in/kitchenware/">kitchenware</a>, be sure to consider the material, size, and design to find the perfect pieces for your needs.</p>
+ </div>
+    </div>
+
+<!-- partial -->
+  
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathroom Hardware: The Finishing Touch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="knobsandahndles.html">Knobs and Handles</a>|</li>
+<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
+<li><a href="statementpieces.html">Statement Pieces</a>|</li>
+<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
+<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
+<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
+<li><a href="coaster.html">Coaster</a>|</li>
+<li><a href="wallart.html">Wall Art</a>|</li>
+<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
+<li><a href="lamps.html">Lamps</a>|</li>
+<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
+<li><a href="doorstopper.html">Door Stopper</a>|</li>
+<li><a href="kitchenware.html">Kitchenware</a>|</li>
+<li><a href="copperutensils.html">Copper Utensils</a>|</li>
+<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+            <h1>Home Decor:The Finishing Touch Of Your Home</h1>
+
+            <p>Your home is your sanctuary, a place where you can relax and unwind after a long day. But even the most beautiful home can benefit from a few finishing touches to add personality and style. Here Indianshelf Brings a few <a href="https://www.indianshelf.in/">Home decor</a> ideas that can help you create a space that is both functional and stylish</p>
+            <img src="https://d2ma7w4w9grdob.cloudfront.net/media/60337Antique%20Green%20Brass%20Tree%20Hooks%20for%20Hanging.jpg" alt="brass wall hook"></a>
+            
+            <h2>Knobs & Handles</h2>
+
+<p>Door knobs and handles are often the first thing people see when they enter your home, so it's important to choose ones that you love. There are a variety of styles to choose from, so you can find something that matches the overall look of your <a href="https://www.indianshelf.in/luxury">Luxury home Decor</a>. You can also mix and match different styles to create a unique look.</p>
+
+<h2>Hooks & Hangers</h2>
+
+<p>Hooks and hangers are a practical way to add storage space to your home, and they can also be used to create a stylish focal point. There are a variety of hooks and hangers available, so you can find ones that match the décor of your room. You can also be creative with your placement, such as hanging hooks from a piece of driftwood or a metal sculpture.</p>
+
+<h2>Showpieces</h2>
+
+<p>Showpieces are a great way to add personality and interest to your home. You can choose showpieces that reflect your personal style, such as a collection of antique clocks or a set of vintage teacups. You can also mix and match different pieces to create a unique look.</p>
+
+<h2>Bronze Oil Lamps</h2>
+
+<p>Bronze oil lamps are a classic and elegant way to add a touch of luxury to your <a href="https://www.indianshelf.com">home Decor</a>. They come in a variety of sizes and styles, so you can find one that fits your décor. You can also place them in a prominent location to make a statement.</p>
+
+<h2>Brass Urlis</h2>
+
+<p>Brass urlis are a traditional Indian pot that is used for cooking, storing, and serving food. They can also be used as decorative items, and they add a touch of ethnic flair to any space. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
+
+<h2>Bronze Ganesha</h2>
+
+<p>Bronze Ganesha is a popular Hindu deity who is often depicted as a pot-bellied elephant with a large head. Bronze Ganesha figurines are a popular home decor item, and they are said to bring good luck and prosperity. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
+
+<h2>Bronze God Idols</h2>
+
+<p>Bronze god idols are another popular home decor item. These figurines can be used to represent a variety of Hindu deities, and they are said to bring blessings and protection to the home. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
+
+<h2>Chandeliers</h2>
+
+<p>Chandeliers are a classic way to add elegance and sophistication to a room. They come in a variety of sizes and styles, so you can find one that fits your décor. You should also consider the size of the room when making your selection.</p>
+
+<h2>Door Stoppers</h2>
+
+<p>Door stoppers are a practical way to prevent doors from slamming shut, and they can also be used to add a touch of style to your home. There are a variety of door stoppers available, so you can find ones that match the décor of your room. You can also be creative with your placement, such as placing a door stopper in the shape of a lion's paw at the entrance to your home.</p>
+
+<h2>Door Knockers</h2>
+
+<p>Door knockers are a traditional way to announce your arrival, and they can also be used to add a touch of personality to your home. There are a variety of door knockers available, so you can find ones that match the décor of your room. You should also consider the size of the door when making your selection.</p>
+
+<h2>Pichwai Paintings</h2>
+
+<p>Pichwai paintings are a traditional form of Indian art that is characterized by their vibrant colors and intricate designs. These paintings are often used as home decor, and they add a touch of Indian culture to any space. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
+
+<h2>Radha Krishna Paintings</h2>
+
+<p>Radha Krishna paintings are another popular form of Indian art that depicts the Hindu deities Radha and Krishna. These paintings are often used as home decor, and they add a touch of beauty and romance to any space. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
+
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

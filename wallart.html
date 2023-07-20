@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wall Art: A Gallery of Expressions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="knobsandahndles.html">Knobs and Handles</a>|</li>
+<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
+<li><a href="statementpieces.html">Statement Pieces</a>|</li>
+<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
+<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
+<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
+<li><a href="coaster.html">Coaster</a>|</li>
+<li><a href="wallart.html">Wall Art</a>|</li>
+<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
+<li><a href="lamps.html">Lamps</a>|</li>
+<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
+<li><a href="doorstopper.html">Door Stopper</a>|</li>
+<li><a href="kitchenware.html">Kitchenware</a>|</li>
+<li><a href="copperutensils.html">Copper Utensils</a>|</li>
+<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+          <h1>Wall Art: A Gallery of Expressions</h1>
+<p>Wall art is an excellent option to give your home charm and style. There are many different types of <a href="https://www.indianshelf.in/wall-art/">wall art</a> available, from abstract paintings to landscape prints. With so many options to choose from, you're sure to find the perfect piece to complement your décor. <a href="https://www.indianshelf.com">Buy wall art in bulk</a> and save money on your home décor and create a cohesive look throughout your home.</p>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/60786Multi-Colour-Pichwai-Painting-for-Decoration-GNPT-32-(1).JPG" alt="pichwai painting"></a>
+<h2>The Most Popular Types of Wall Art:</h2>
+  <h3>Abstract Art Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/abstract-art-paintings/">Abstract art</a> is a style of art that does not depict any recognizable objects or scenes. Instead, abstract paintings are composed of shapes, colors, and lines that are meant to evoke emotion or create a sense of visual harmony.
+  </p>
+  <h3>Canvas Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/canvas-painting/">Canvas paintings</a> are made on a stretched canvas that is typically made of linen or cotton. Canvas paintings are a versatile medium that can be used to create a variety of different styles of art, from realistic portraits to abstract landscapes.
+  </p>
+  <h3>Canvas Rajasthani Painting</h3>
+  <p>
+    <a href="https://www.indianshelf.in/canvas-rajasthani-painting/">Rajasthani paintings</a> are a type of Indian folk art that is characterized by its vibrant colors and intricate designs. Rajasthani paintings often depict scenes from Hindu mythology or everyday life in Rajasthan.
+  </p>
+  <h3>Charcoal Drawings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/charcoal-drawing/">Charcoal paintings</a> are made using charcoal, a black pigment that is made from burnt wood. Charcoal drawings are a popular medium for artists because they are easy to use and can create a wide range of effects.
+  </p>
+  <h3>Contemporary Art</h3>
+  <p>
+    <a href="https://www.indianshelf.in/contemporary/">Contemporary art</a> is a broad term that encompasses art that has been created in the 20th or 21st centuries. Contemporary art is often experimental and challenges traditional notions of what art is.
+  </p>
+  <h3>Film Posters</h3>
+  <p>
+    <a href="https://www.indianshelf.in/film-posters/">Film posters</a> are a type of promotional art that is used to advertise movies. Film posters are often designed to be eye-catching and to capture the attention of potential viewers.
+  </p>
+  <h3>Islamic Calligraphy Wall Art</h3>
+  <p>
+    <a href="https://www.indianshelf.in/islamic-calligraphy-wall-art/">Islamic calligraphy</a> is a form of Islamic art that involves the artful writing of Arabic script. Islamic calligraphy is often used to decorate mosques and other religious buildings, but it can also be found in homes and businesses.
+  </p>
+  <h3>Landscape Paintings</h3>
+  <a href="https://www.indianshelf.in/landscape-paintings/">Landscape paintings</a> depict natural scenery, such as mountains, forests, and rivers. Landscape paintings are a popular type of wall art because they can help to create a sense of calm and serenity in a room.
+  <h3>Metal Wall Art</h3>
+  <p>
+    <a href="https://www.indianshelf.in/metal-wall-art/">Metal wall art</a> is made from a variety of different metals, such as steel, aluminum, and copper. Metal wall art can be found in a variety of different styles, from abstract sculptures to realistic portraits.
+  </p>
+  <h3>Miniature Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/miniature-paintings/">Miniature paintings</a> are small paintings that are typically less than 12 inches in size. Miniature paintings were originally created as a way to depict religious scenes or to record historical events.
+  </p>
+  <h3>Mughal Art</h3>
+  <p>
+    <a href="https://www.indianshelf.in/mughal-art/">Mughal art</a> is a style of Indian art that was developed during the Mughal Empire, which ruled India from the 16th to the 18th centuries. Mughal art is characterized by its use of bright colors, intricate designs, and Persian influences.
+  </p>
+  <h3>Needle Painting</h3>
+  <a href="https://www.indianshelf.in/needle-painting/">Needle painting</a> is a type of embroidery that is done using a needle and thread. Needle paintings are often small and detailed, and they can be used to depict a variety of different subjects, such as flowers, animals, and landscapes.
+  <h3>Oil Paintings</h3>
+ <p>
+ <a href="https://www.indianshelf.in/oil-paintings/">Oil paintings</a> are made using oil paints, which are made from pigments that are mixed with oil. Oil paintings are a popular type of wall art because they are durable and can last for centuries.
+  </p>
+  <h3>Pichwai Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/pichwai-paintings-8898/">Pichwai paintings</a> are a type of Indian folk art that is made in the city of Nathdwara in Rajasthan. Pichwai paintings depict Hindu deities, such as Krishna and Radha.
+  </p>
+  <h3>Portrait Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/portrait-paintings/">Portrait paintings</a> depict a person's likeness. Portrait paintings have been a popular form of art for centuries, and they can be found in museums and private collections all over the world.
+  </p>
+  <h3>Prints and Lithographs</h3>
+  <p>
+    <a href="https://www.indianshelf.in/prints-and-lithographs/">Prints and lithographs</a> are reproductions of artworks that are made using a variety of different techniques. Prints and lithographs are a popular type of wall art because they are affordable and can be found in a variety of different styles.
+  </p>
+  <h3>Radha Krishna Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/radha-krishna-paintings/">Radha Krishna paintings</a> are a type of Indian art that depicts the Hindu deities Radha and Krishna. Radha Krishna paintings.
+  </p>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/61383Hand-Painted-Pichwai-Painting-of-Krishna-Radha-for-Decor-GNPT-66-(1).JPG" alt="Radha Krishna painting"></a>
+  <h3>Sketch Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/sketch-paintings/">Sketch paintings</a> are quick, loose drawings that are often used to capture an artist's initial ideas. Sketch paintings can be done in a variety of different media, such as pencil, charcoal, or pen and ink.
+  </p>
+  <h3>Tanjore Art</h3>
+  <p>
+    <a href="https://www.indianshelf.in/tanjore-art/">Tanjore art</a> is a type of Indian art that is characterized by its use of gold leaf and intricate designs. Tanjore paintings often depict Hindu deities or scenes from Hindu mythology.
+  </p>
+  <h3>Thangka Paintings</h3>
+  <p>
+    <a href="https://www.indianshelf.in/thangka-paintings/">Thangka paintings</a> are a type of Tibetan art that is used for religious purposes. Thangka paintings depict Buddhist deities, mandalas, and other religious symbols.
+  </p>
+  <h3>Vintage Photos</h3>
+  <p>
+    Vintage photos are photographs that were taken before the digital age. Vintage photos can be a great way to add a touch of nostalgia to your home décor.
+  </p>
+<h2>Tips for Choosing Perfect Wall Art:</h2>
+<ul>
+<li>Consider the size and shape of your wall.</li>
+<li>Consider the design of your home.</li>
+<li>Choose a piece that you love and that will make you happy every time you see it.</li>
+</ul>
+<h2>Conclusion:</h2>
+<p><a href="https://www.indianshelf.in/wall-art/">Wall art</a> is a great way to add personality and style to your home. With so many different types of wall art available, you're sure to find the perfect piece to complement your décor.</p>
+     </div>
+    </div>
+
+<!-- partial -->
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Knobs and Handles: A Guide to the Different Types and Styles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="knobsandahndles.html">Knobs and Handles</a>|</li>
+<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
+<li><a href="statementpieces.html">Statement Pieces</a>|</li>
+<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
+<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
+<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
+<li><a href="coaster.html">Coaster</a>|</li>
+<li><a href="wallart.html">Wall Art</a>|</li>
+<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
+<li><a href="lamps.html">Lamps</a>|</li>
+<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
+<li><a href="doorstopper.html">Door Stopper</a>|</li>
+<li><a href="kitchenware.html">Kitchenware</a>|</li>
+<li><a href="copperutensils.html">Copper Utensils</a>|</li>        
+<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+   </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+        <h1>Knobs and Handles: A Guide to the Different Types and Styles</h1>
+<p><a href="https://www.indianshelf.in/knobs-handles/">Knobs and handles</a> are essential elements of any home. They add functionality and style to doors, cabinets, and drawers. There are many different types of knobs and handles available, so you can find the perfect ones to match your home's décor. If you're planning a major renovation, you can <a href="https://www.indianshelf.com/knobs-handles/">buy knobs and handles in bulk</a>. This will ensure that they all match and that you have enough to complete the project.</p>
+<h2>What are Knobs and Handles?</h2>
+<p>Knobs and handles are small, functional pieces of hardware that are used to open and close doors, cabinets, and drawers. They are typically made of metal, wood, or ceramic, and they come in a wide variety of styles.</p>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/44113Hand-Crafted-Rustic-Brass-Tiger-Design-Door-Handle-NMH-436-(1).JPG" alt="brass door handle"></a>
+<h2>Why are Knobs and Handles Important?</h2>
+<p>Knobs and handles are important for a number of reasons. First, they make it easier to open and close doors, cabinets, and drawers. Second, they can add a touch of style to your home's décor. Third, they can protect your furniture from wear and tear.</p>
+<h2>Different Types of Knobs and Handles</h2>
+<p>There are many different types of knobs and handles available. The most popular types are:</p>
+<ul>
+<li>Metal knobs: <a href="https://www.indianshelf.in/metal-knobs-275/">Metal knobs</a> are made of a variety of metals, including brass, bronze, and steel. They are available in a wide variety of finishes, including polished, antique, and hammered.</li>
+<li>Wooden knobs: <a href="https://www.indianshelf.in/wooden-knobs/">Wooden knobs</a> are made of a variety of woods, including oak, walnut, and maple. They come in a range of finishes, such as natural, stained, and painted.</li>
+<li>Ceramic knobs: <a href="https://www.indianshelf.in/ceramic-knobs/">Ceramic knobs</a> are made of ceramic, which is a durable and heat-resistant material. They come in a huge selection of colours and designs.</li>
+<li>Glass knobs: <a href="https://www.indianshelf.in/glass-knobs/">Glass knobs</a> are made of glass, which is a transparent material. They come in a range of colours and finishes.</li>
+<li>Mother of pearl knobs: <a href="https://www.indianshelf.in/mother-of-pearl-knobs-and-handles/">Mother of pearl knobs</a> are made of mother of pearl, which is a natural material that is found in the shells of certain mollusks. They are available in a variety of colours and patterns.</li>
+<li>Stone knobs: <a href="https://www.indianshelf.in/stone-knobs/">Stone knobs</a> are made of stone, which is a natural material that is available in a variety of colours and finishes. They are often used in traditional décor.</li>
+<li>Bone knobs: <a href="https://www.indianshelf.in/bone-knobs/">Bone knobs</a> are made of bone, which is a natural material that is available in a variety of colours and finishes. They are often used in traditional décor.</li>
+<li>Leather knobs: <a href="https://www.indianshelf.in/leather-knobs/">Leather knobs</a> are made of leather, which is a natural material that is available in a variety of colours and finishes. They are often used in rustic décor.</li>
+<li>Resin knobs: <a href="https://www.indianshelf.in/resin-knobs/">Resin knobs</a> are made of resin, which is a synthetic material that is available in a variety of colours and finishes. They are often used in modern décor.</li>
+</ul>
+<h2>Ceramic Knobs</h2>
+<p>Ceramic knobs are a popular choice for many homeowners because they are durable, attractive, and available in a wide variety of styles. Ceramic knobs are made of a type of clay that is fired at high temperatures. This process makes them strong and resistant to wear and tear. Ceramic knobs are also available in a wide variety of colours, finishes, and shapes. This makes them a versatile option that can be used to match any décor.</p>
+<h3>Types of Ceramic Knobs</h3>
+<p>There are many different types of ceramic knobs available, including:</p>
+<ul>
+<li>Plain ceramic knobs: These are the most basic type of ceramic knob. They are typically round or square in shape and have a simple design.</li>
+<li>Embossed ceramic knobs: These knobs have a raised design that is created by pressing the clay into a mold. This type of knob can be used to add a touch of detail to your décor.</li>
+<li>Inlaid ceramic knobs: These knobs have a design that is inlaid into the surface of the knob. This type of knob can be used to add a touch of colour or pattern to your décor.</li>
+<li>Decorative ceramic knobs: These knobs have a more elaborate design. They can be used to add a touch of personality or whimsy to your décor.</li>
+</ul>
+<h3>Benefits of Ceramic Knobs</h3>
+<p>There are many benefits to using ceramic knobs, including:</p>
+<ul>
+<li>Durability: Ceramic knobs are durable and can withstand years of use.</li>
+<li>Affordability: Ceramic knobs are typically more affordable than other types of knobs, such as metal or wood.</li>
+<li>Variety: Ceramic knobs are available in a wide variety of styles, colours, and finishes. This makes them a versatile option that can be used to match any décor.</li>
+<li>Easy to care for: Ceramic knobs are easy to care for. A moist cloth can be used to wipe them clean.</li>
+<li>Heat resistant: Ceramic knobs are heat resistant, so they can be used on cabinets and drawers that are near stoves or ovens.</li>
+</ul>
+<h2>Glass Knobs</h2>
+<p>Glass knobs are another popular choice for many homeowners. They are available in a wide variety of colours, finishes, and shapes. Glass knobs can be used to add a touch of elegance or sophistication to your décor.</p>
+<h3>Types of Glass Knobs</h3>
+<p>There are many different types of glass knobs available, including:</p>
+<ul>
+<li>Plain glass knobs: These are the most basic type of glass knob. They are typically round or square in shape and have a simple design.</li>
+<li>Colored glass knobs: These knobs are made of coloured glass. They can be used to add a touch of colour to your décor.</li>
+<li>Patterned glass knobs: These knobs have a pattern that is created by etching or sandblasting the glass. This type of knob can be used to add a touch of detail to your décor.</li>
+<li>Decorative glass knobs: These knobs have a more elaborate design. They can be used to add a touch of personality or whimsy to your décor.</li>
+</ul>
+<h3>Benefits of Glass Knobs</h3>
+<p>There are many benefits to using glass knobs, including:</p>
+<ul>
+<li>Durability: Glass knobs are durable and can withstand years of use. They are resistant to scratches, dents, and fading.</li>
+<li>Affordability: Glass knobs are typically more affordable than other types of knobs, such as metal or wood.</li>
+<li>Variety: Glass knobs are available in a wide variety of styles, colours, and finishes. This makes them a versatile option that can be used to match any décor.</li>
+<li>Easy to care for: Glass knobs are easy to care for. They can be wiped clean with a damp cloth.</li>
+<li>Transparent: Glass knobs are transparent, which allows you to see the wood or metal underneath. This can be a nice way to add a touch of contrast to your décor.</li>
+</ul>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/60414Grey%20Golden%20Floral%20Cupboard%20Knobs.jpg" alt="door knob"></a>
+<h2>Conclusion</h2>
+  <p>When choosing <a href="https://www.indianshelf.in/knobs-handles/">Door knobs and Door handles</a> for your home, it is important to consider the style of your décor, the functionality of the knobs and handles, and your budget. There are many different types of knobs and handles available, so you can find the perfect ones to match your needs and preferences.</p>
+  <p>I hope this blog post has helped you learn more about knobs and handles. If you have any questions, please feel free to leave a comment below.</p>
+  </div>
+    </div>
+
+<!-- partial -->
+</body>
+</html>

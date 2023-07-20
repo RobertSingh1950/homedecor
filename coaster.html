@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coasters: A Versatile and Useful Item</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="knobsandahndles.html">Knobs and Handles</a>|</li>
+<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
+<li><a href="statementpieces.html">Statement Pieces</a>|</li>
+<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
+<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
+<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
+<li><a href="coaster.html">Coaster</a>|</li>
+<li><a href="wallart.html">Wall Art</a>|</li>
+<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
+<li><a href="lamps.html">Lamps</a>|</li>
+<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
+<li><a href="doorstopper.html">Door Stopper</a>|</li>
+<li><a href="kitchenware.html">Kitchenware</a>|</li>
+<li><a href="copperutensils.html">Copper Utensils</a>|</li>
+<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+            <h1>Coasters: A Versatile and Useful Item</h1>
+            <img src="https://d2ma7w4w9grdob.cloudfront.net/media/61351Black%20and%20White%20Handmade%20Wooden%20Coasters%20in%20Set%20of%204.JPG" alt="wooden coasters"></a>
+            <p>Coasters are a simple but essential item for any home. They protect your furniture from water rings and scratches, and they can also add a touch of style to your décor. But did you know that <a href="https://www.indianshelf.in/coaster/">Tea coasters</a> can be used for more than just protecting your furniture?</p>
+  <h2>
+    The Need for Coasters and their Purpose
+  </h2>
+<h3>Coasters as Drink Holders</h3>
+<p>Of course, the most common use for a coaster is to protect your furniture from water rings and scratches. When you place a drink on a coaster, the liquid is absorbed by the coaster instead of your furniture. This helps to prevent water rings and scratches, and it also helps to keep your furniture looking its best.</p>
+<h3>Coasters as Decorative Items</h3>
+<p>Coasters can also be used as decorative items, You can <a href="https://www.indianshelf.com/coaster/">Buy coasters Online in bulk</a>. There are many different types of coasters available, from simple coasters with a plain design to coasters with elaborate designs or patterns. You can choose coasters that match the décor of your home, or you can choose coasters that add a pop of color or pattern.</p>
+<h3>Coasters as Gift Ideas</h3>
+<p>Coasters are also a great gift idea. They are relatively inexpensive, and they can be personalized with a special message or design. Coasters make a thoughtful and practical gift for any occasion.</p>
+<h3>Coasters as Bar Tools</h3>
+<p>Coasters can also be used as bar tools. For example, you can use a coaster to hold a cocktail shaker or to protect a bar mat from spills. Coasters can also be used to hold ice cubes or to prevent a glass from slipping.</p>
+<h3>Coasters as Travel Essentials</h3>
+<p>Coasters are also a great travel essential. They can be used to protect your furniture in hotel rooms or to keep your drinks from sliding around in your car. Coasters are also a great way to keep your luggage organized.</p>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/61360-MCR-075-1.JPG" alt="Handmade coasters"></a>
+<h2>Types of Coasters</h2>
+<p>There are many different types of coasters available, made from a variety of materials. The most popular kinds of coasters include:</p>
+<h3>Rubber Coasters</h3>
+  <p>
+    Rubber coasters are a good choice for protecting your furniture from water rings and scratches. They are also simple to locate and reasonably priced.
+  </p>
+<h3>Wood Coasters</h3>
+  <p>
+    Wood coasters are a more decorative option. They can be made from a variety of woods, and they can be finished in a variety of colors or patterns.
+  </p>
+<h3>Glass Coasters</h3>
+  <p>
+    Glass coasters are a stylish option. They can be clear or frosted, and they can be decorated with a variety of designs.
+  </p>
+<h3>Leather Coasters</h3>
+  <p>
+    Leather coasters are a luxurious option. They are made from high-quality leather, and they can be personalized with a special message or design.
+  </p>
+<h3>Ceramic Coasters</h3>
+  <p>
+    Ceramic coasters are a versatile option. They can be made in a variety of shapes and sizes, and they can be decorated with a variety of designs.
+  </p>
+<h2>The Importance of Choosing the Right Type of Coaster for Your Needs</h2>
+<p>The type of coaster you choose will depend on the purpose you need it for. For example, if you are looking for a coaster to protect your furniture, you will need a coaster that is made from a durable material, such as rubber or wood. If you are looking for a coaster to add a touch of style to your décor, you can choose a coaster that is made from a more decorative material, such as glass or ceramic.</p>
+<h2>The Importance of Choosing Coasters that Match Your Décor</h2>
+<p>Coasters can be a great way to add a touch of style to your décor. When choosing coasters, it is important to choose coasters that match the overall style of your home. For example, if you have a modern home, you might choose coasters that are made from glass or metal. If you have a traditional home, you might choose coasters that are made from wood or ceramic.</p>
+<h2>The Importance of Choosing Coasters that are Easy to Care for</h2>
+<p>Coasters should be easy to care for. You should choose coasters that can be easily cleaned with a mild soap and water solution. You should also avoid choosing coasters that are made from materials that are easily stained or damaged.</p>
+<h2>How to Care for Coasters</h2>
+<p>Coasters should be cleaned regularly to prevent them from becoming dirty or stained. You can clean coasters with a mild soap and water solution. You can also use a coaster brush to remove dirt and debris from the grooves of the coaster.</p>
+<h2>Where to Buy Coasters</h2>
+<p>Coasters can be purchased from a variety of retailers, including home goods stores, gift shops, and online retailers.</p>
+  <h2>Conclusion</h2>
+  <p>
+    <a href="https://www.indianshelf.in/coaster/">Tea Coasters</a> are a versatile and useful item that can be used for a variety of purposes. They are a great way to protect your furniture, add a touch of style to your décor, or give a thoughtful gift. To find out more about coasters, visit our website.
+  </p>
+
+        </div>
+    </div>
+
+<!-- partial -->
+</body>
+</html>

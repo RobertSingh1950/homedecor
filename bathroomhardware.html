@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathroom Hardware: The Finishing Touch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="knobsandahndles.html">Knobs and Handles</a>|</li>
+<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
+<li><a href="statementpieces.html">Statement Pieces</a>|</li>
+<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
+<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
+<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
+<li><a href="coaster.html">Coaster</a>|</li>
+<li><a href="wallart.html">Wall Art</a>|</li>
+<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
+<li><a href="lamps.html">Lamps</a>|</li>
+<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
+<li><a href="doorstopper.html">Door Stopper</a>|</li>
+<li><a href="kitchenware.html">Kitchenware</a>|</li>
+<li><a href="copperutensils.html">Copper Utensils</a>|</li>
+<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+            <h1>Bathroom Hardware: The Finishing Touch</h1>
+            <img src="https://d2ma7w4w9grdob.cloudfront.net/media/57666-BrassBirdTowelRackPaperTowelHolder1.jpg" alt="Brass Paper Towel Handle"></a>
+            
+            <p>Bathroom hardware is the finishing touch that can make your bathroom look complete and stylish. From faucets and showerheads to towel bars and toilet paper holders, there are a variety of <a href="https://www.indianshelf.in/bathroom-hardware/">bathroom hardware</a> options available to choose from.</p>
+<h2>Types of Bathroom Hardware</h2>
+  <p>
+    There are many different types of bathroom hardware available, including:
+  </p>
+<h3>Faucets</h3>
+  <p>
+    Faucets are one of the most important pieces of bathroom hardware, as they are used to control the flow of water. There are a variety of faucet styles available, including single-handle faucets, two-handle faucets, and touchless faucets.
+  </p>
+<h3>Showerheads</h3>
+  <p>
+    Showerheads are another important piece of bathroom hardware, as they are used to provide water for showering. There are a variety of showerhead styles available, including rainfall showerheads, handheld showerheads, and body spray showerheads.
+  </p>
+<h3>Towel Bars</h3>
+  <p>
+    Towel bars are used to hang towels, and they come in a variety of styles, including wall-mounted towel bars, towel rings, and towel racks.
+  </p>
+<h3>Toilet Paper Holders</h3>
+  <p>
+    Toilet paper holders are used to hold toilet paper, and they come in a variety of styles, including wall-mounted toilet paper holders, floor-standing toilet paper holders, and shelf-mounted toilet paper holders.
+  </p>
+<img src="https://d2ma7w4w9grdob.cloudfront.net/media/61204Silver%20Brass%20Bird%20Design%20Set%20of%205%20Bathroom%20Hardware%20Accessories.jpg" alt="silver brass bathroom design"></a>
+<h3>Other Bathroom Hardware</h3>
+  <p>
+    Other bathroom hardware items include soap dishes, toothbrush holders, and wastebaskets. If you are looking for <a href="https://www.indianshelf.com/bathroom-hardware/">Bathroom Hardware in Bulk</a> for more details you can contact us. 
+  </p>
+<h2>Materials Used for Bathroom Hardware</h3>
+<ul>
+<li>Metal</li>
+<li>Plastic</li>
+<li>Wood</li>
+<li>Glass</li>
+</ul>
+<h2>Styles of Bathroom Hardware</h2>
+<p>
+  Bathroom hardware comes in a variety of styles, including traditional, modern, and contemporary. Traditional bathroom hardware is often made from brass or bronze and has a polished or antique finish. Modern bathroom hardware is often made from chrome or nickel and has a sleek, minimalist look. Contemporary bathroom hardware can be made from a variety of materials and has a more eclectic style.
+  </p>
+<h2>Choosing Bathroom Hardware</h2>
+<ul>
+<li>The style of your bathroom: The style of your bathroom will help to determine the style of bathroom hardware that you choose. For example, if you have a traditional bathroom, you might choose traditional-style bathroom hardware.</li>
+<li>The finish of your bathroom: The finish of your bathroom will also affect your choice of bathroom hardware. For example, if you have a white bathroom, you might choose white-finished bathroom hardware.</li>
+<li>The budget: Bathroom hardware can range in price from a few dollars to hundreds of dollars. It is important to set a budget before you start shopping for bathroom hardware.</li>
+  <li>Choose Quality Hardware: Bathroom hardware is an investment, so it is important to choose quality hardware that will last for many years. Look for hardware that is made from durable materials and has a finish that is resistant to tarnishing and corrosion.</li>
+</ul>
+<h2>Caring for Bathroom Hardware</h2>
+<p>Bathroom hardware should be cleaned regularly to prevent it from tarnishing or corroding. You can clean bathroom hardware with a mild soap and water solution.</p>
+<h2>Conclusion</h2>
+<p><a href="https://www.indianshelf.in/bathroom-hardware/">Bathroom hardware</a> is an important part of any bathroom, and it can help to make your bathroom look complete and stylish. When choosing bathroom hardware, there are a few factors to consider, including the style of your bathroom, the finish of your bathroom, and your budget. With a little care, bathroom hardware can last for many years.</p>
+<p>Visit our website to learn more about bathroom hardware.</p>
+
+
+        </div>
+    </div>
+
+<!-- partial -->
+  
+</body>
+</html>
+
