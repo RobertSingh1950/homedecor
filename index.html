@@ -1,272 +1,563 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bathroom Hardware: The Finishing Touch</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <style type="text/css">
-        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
-        .col-100{width: 100%;}
-        .container{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-}
-
-.navbar{
-/*    position: fixed;*/
-    width: 100%;
-    background: #fff;
-    color: #000;
-    opacity: 0.85;
-    z-index: 100;
-    background: #464646;
-    display: table;
-}
-
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-items{
-    padding-left: unset !important;margin-left: unset;
-    order: 2;
-     margin-top:unset;
-     margin-bottom:unset;
-}
-.logo{
-    order: 1;
-    font-size: 2.3rem;
-}
-
-.menu-items li{
-    list-style: none;
-    font-size: 1.3rem;
-    display: inline-block;
-        border: 1px solid #6c6c6c;
-    line-height: 10px;
-    margin-bottom: 5px;
-}
-.navbar a{
-    color: #fff;
-    padding:10px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 15px;
-    transition: color 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.navbar a:hover{
-    color: #117964;
-}
-
-@media (max-width: 768px){
-    .navbar{
-        opacity: 0.95;
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndianShelf — Handcrafted Home Decor &amp; Hardware from India</title>
+  <meta name="description" content="Hand-cast brass hardware, ceramic knobs, Pichwai wall art, lamps and copper utensils — made by Indian artisan families, shipped worldwide, returnable for 30 days.">
+  <meta property="og:title" content="IndianShelf — Handcrafted in India. At home anywhere.">
+  <meta property="og:description" content="Hand-cast brass hardware, ceramic knobs, Pichwai wall art and more — made by Indian artisan families, shipped worldwide.">
+  <meta property="og:image" content="https://d2ma7w4w9grdob.cloudfront.net/media/44113Hand-Crafted-Rustic-Brass-Tiger-Design-Door-Handle-NMH-436-(1).JPG">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪔</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IndianShelf",
+    "url": "https://www.indianshelf.in/",
+    "description": "Handcrafted Indian home decor and architectural hardware made by artisan families.",
+    "sameAs": ["https://www.indianshelf.in/", "https://www.indianshelf.com/"]
+  }
+  </script>
+  <style>
+    /* ---------- Design tokens (WEBSITE_BLUEPRINT.md §3) ---------- */
+    :root{
+      --bg:        #FAF7F2;   /* warm off-white, gallery wall */
+      --bg-deep:   #F1EBE1;
+      --ink:       #1C1A17;   /* deep ink, never pure black */
+      --ink-soft:  #57524A;
+      --brass:     #A6803A;   /* aged brass — CTAs and links only */
+      --brass-dark:#8A6A2E;
+      --terracotta:#9A4B2F;
+      --line:      #E3DCCF;
+      --font-display:'Fraunces', Georgia, serif;
+      --font-body:  'Inter', -apple-system, sans-serif;
+      --measure: 68ch;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    body{
+      margin:0; padding:0;
+      background:var(--bg); color:var(--ink);
+      font-family:var(--font-body);
+      font-size:1.06rem; font-weight:400; line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{max-width:100%; display:block}
+    a{color:var(--brass); text-decoration:none}
+    a:hover{color:var(--brass-dark)}
+    h1,h2,h3{font-family:var(--font-display); font-weight:600; line-height:1.15; margin:0 0 .5em}
+    .container{max-width:1320px; width:92%; margin:0 auto}
+    .eyebrow{
+      font-family:var(--font-body); font-size:.78rem; font-weight:600;
+      letter-spacing:.18em; text-transform:uppercase; color:var(--brass);
+      margin-bottom:1rem;
     }
 
-    .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger-lines{
-        display: block;
+    /* ---------- Announcement bar ---------- */
+    .announce{
+      background:var(--ink); color:var(--bg);
+      font-size:.82rem; letter-spacing:.04em;
+      text-align:center; padding:.55rem 1rem;
     }
 
-    .navbar-container{
-        display: block;
-        position: relative;
-        height: 64px;
+    /* ---------- Header ---------- */
+    .header{
+      position:sticky; top:0; z-index:100;
+      background:rgba(250,247,242,.94); backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--line);
     }
-
-    .navbar-container input[type="checkbox"]{
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 30px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
+    .header-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      height:76px;
     }
-
-    .navbar-container .hamburger-lines{
-        display: block;
-        height: 28px;
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .navbar-container .hamburger-lines .line{
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333;
-    }
-    
-    .navbar-container .hamburger-lines .line1{
-        transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line2{
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .navbar-container .hamburger-lines .line3{
-        transform-origin: 0% 100%;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar .menu-items{
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow:  5px 0px 10px 0px #aaa;
-        overflow: scroll;
-    }
-
-    .navbar .menu-items li{
-        margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
     .logo{
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 2.5rem;
+      font-family:var(--font-display); font-size:1.7rem; font-weight:600;
+      color:var(--ink); letter-spacing:.01em;
+    }
+    .logo:hover{color:var(--ink)}
+    .logo .mark{color:var(--brass)}
+    .nav{display:flex; gap:.25rem; align-items:center}
+    .nav-group{position:relative}
+    .nav-group>button{
+      background:none; border:none; cursor:pointer;
+      font:inherit; font-size:.95rem; font-weight:500; color:var(--ink);
+      padding:.8rem 1rem;
+    }
+    .nav-group>button::after{content:" ▾"; font-size:.7em; color:var(--brass)}
+    .dropdown{
+      display:none; position:absolute; top:100%; left:0; min-width:230px;
+      background:var(--bg); border:1px solid var(--line);
+      box-shadow:0 14px 34px rgba(28,26,23,.10);
+      padding:.6rem 0;
+    }
+    .nav-group:hover .dropdown, .nav-group:focus-within .dropdown{display:block}
+    .dropdown a{
+      display:block; padding:.45rem 1.25rem;
+      font-size:.92rem; color:var(--ink-soft);
+    }
+    .dropdown a:hover{color:var(--brass); background:var(--bg-deep)}
+    .nav-shop-link{
+      margin-left:1rem; font-size:.9rem; font-weight:600; color:var(--brass);
+      border:1px solid var(--brass); padding:.5rem 1.1rem; border-radius:2px;
+      transition:background .2s,color .2s;
+    }
+    .nav-shop-link:hover{background:var(--brass); color:#fff}
+    .nav-toggle{display:none}
+    .hamburger{display:none}
+
+    /* ---------- Hero (blueprint §2.3) ---------- */
+    .hero{padding:5.5rem 0 4.5rem; overflow:hidden}
+    .hero-grid{
+      display:grid; grid-template-columns:minmax(0,6fr) minmax(0,5fr); gap:4.5rem; align-items:center;
+    }
+    .hero h1{
+      font-size:clamp(2.5rem, 5.2vw, 4.3rem);
+      margin-bottom:1.4rem;
+    }
+    .hero-sub{
+      max-width:34rem; color:var(--ink-soft);
+      font-size:1.12rem; margin:0 0 2.2rem;
+    }
+    .cta{
+      display:inline-block; background:var(--brass); color:#fff;
+      font-weight:600; font-size:1rem; letter-spacing:.02em;
+      padding:1rem 2.4rem; border-radius:2px;
+      transition:background .2s, transform .2s;
+    }
+    .cta:hover{background:var(--brass-dark); color:#fff; transform:translateY(-1px)}
+    .cta-micro{
+      display:block; margin-top:.7rem;
+      font-size:.83rem; color:var(--ink-soft); letter-spacing:.02em;
+    }
+    /* Offset-framed image — asymmetric, "designed" (blueprint §3 layout) */
+    .hero-figure{position:relative; margin:0}
+    .hero-figure img{
+      width:100%; height:auto; aspect-ratio:4/5; object-fit:cover;
+      box-shadow:0 24px 60px rgba(28,26,23,.18);
+    }
+    .hero-figure::before{
+      content:""; position:absolute; inset:1.6rem -1.6rem -1.6rem 1.6rem;
+      border:1px solid var(--brass); z-index:-1;
+    }
+    .hero-figure figcaption{
+      margin-top:2.4rem; font-size:.8rem; color:var(--ink-soft); letter-spacing:.03em;
     }
 
-    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(0);
+    /* ---------- Above-the-fold trust strip ---------- */
+    .trust-strip{
+      border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+      background:var(--bg-deep);
+    }
+    .trust-strip-inner{
+      display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem 3.5rem;
+      padding:1.1rem 0; font-size:.92rem; color:var(--ink-soft);
+    }
+    .trust-strip b{color:var(--ink); font-weight:600}
+    .trust-strip .star{color:var(--brass)}
+
+    /* ---------- Category tiles (blueprint §2.4) ---------- */
+    .section{padding:5.5rem 0}
+    .section-head{max-width:44rem; margin-bottom:3rem}
+    .section-head h2{font-size:clamp(1.9rem,3.2vw,2.6rem)}
+    .section-head p{color:var(--ink-soft); margin:0}
+    .tiles{display:grid; grid-template-columns:1fr 1fr; gap:1.6rem}
+    .tile{position:relative; display:block; overflow:hidden; color:#fff}
+    .tile img{
+      width:100%; aspect-ratio:16/10; object-fit:cover;
+      transition:transform .5s ease;
+    }
+    .tile:hover img{transform:scale(1.04)}
+    .tile-label{
+      position:absolute; inset:auto 0 0 0;
+      padding:2.2rem 1.8rem 1.4rem;
+      background:linear-gradient(to top, rgba(28,26,23,.78), transparent);
+    }
+    .tile-label h3{font-size:1.45rem; margin:0; color:#fff}
+    .tile-label span{font-size:.85rem; opacity:.85}
+
+    /* ---------- Trust section (blueprint §2.5 + §2.8) ---------- */
+    .trust-section{background:var(--ink); color:var(--bg)}
+    .trust-section .section-head h2{color:var(--bg)}
+    .trust-section .section-head p{color:#B8B0A3}
+    .signals{display:grid; grid-template-columns:repeat(3,1fr); gap:2.5rem; margin-bottom:4.5rem}
+    .signal{border-top:1px solid rgba(250,247,242,.25); padding-top:1.6rem}
+    .signal .num{
+      font-family:var(--font-display); font-size:2.1rem; color:var(--brass);
+      display:block; margin-bottom:.4rem;
+    }
+    .signal h3{font-size:1.15rem; color:var(--bg)}
+    .signal p{font-size:.95rem; color:#B8B0A3; margin:0}
+    .testimonial{
+      max-width:46rem; margin:0 auto; text-align:center;
+    }
+    .testimonial blockquote{
+      font-family:var(--font-display); font-size:clamp(1.25rem,2.2vw,1.6rem);
+      line-height:1.5; margin:0 0 1.4rem;
+    }
+    .testimonial cite{font-style:normal; font-size:.92rem; color:#B8B0A3}
+    .placeholder-note{
+      display:inline-block; margin-top:1rem;
+      font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+      color:var(--brass); border:1px dashed var(--brass);
+      padding:.25rem .7rem; border-radius:2px;
+    }
+    .objection{
+      max-width:46rem; margin:3rem auto 0; text-align:center;
+      font-size:1.02rem; color:var(--bg);
+      border-top:1px solid rgba(250,247,242,.25); padding-top:2.2rem;
+    }
+    .rating-badge{
+      display:inline-flex; align-items:center; gap:.7rem;
+      margin-top:2rem; padding:.7rem 1.4rem;
+      border:1px solid rgba(250,247,242,.3); border-radius:2px;
+      font-size:.92rem; color:var(--bg);
+    }
+    .rating-badge .star{color:var(--brass); letter-spacing:.1em}
+
+    /* ---------- Buying guide accordion (SEO content preserved) ---------- */
+    .guide details{border-bottom:1px solid var(--line)}
+    .guide summary{
+      cursor:pointer; list-style:none;
+      font-family:var(--font-display); font-size:1.25rem; font-weight:600;
+      padding:1.3rem 0; display:flex; justify-content:space-between; align-items:center;
+    }
+    .guide summary::-webkit-details-marker{display:none}
+    .guide summary::after{content:"+"; color:var(--brass); font-size:1.4rem; font-family:var(--font-body)}
+    .guide details[open] summary::after{content:"–"}
+    .guide .guide-body{max-width:var(--measure); padding-bottom:1.6rem; color:var(--ink-soft)}
+    .guide .guide-body p{margin-top:0}
+
+    /* ---------- Email capture ---------- */
+    .email-capture{background:var(--bg-deep); text-align:center}
+    .email-capture h2{font-size:clamp(1.7rem,2.8vw,2.2rem)}
+    .email-capture p{color:var(--ink-soft); max-width:36rem; margin:0 auto 2rem}
+    .email-form{display:flex; gap:.7rem; justify-content:center; flex-wrap:wrap}
+    .email-form input{
+      font:inherit; font-size:.98rem; padding:.9rem 1.2rem;
+      border:1px solid var(--line); background:#fff; color:var(--ink);
+      min-width:290px; border-radius:2px;
+    }
+    .email-form button{
+      font:inherit; font-weight:600; font-size:.98rem; cursor:pointer;
+      background:var(--ink); color:var(--bg); border:none;
+      padding:.9rem 1.8rem; border-radius:2px; transition:background .2s;
+    }
+    .email-form button:hover{background:#000}
+    .email-fineprint{font-size:.8rem; color:var(--ink-soft); margin-top:1rem}
+
+    /* ---------- Footer (blueprint §2.12) ---------- */
+    .footer{background:var(--ink); color:#B8B0A3; font-size:.92rem}
+    .footer-grid{
+      display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem;
+      padding:4.5rem 0 3rem;
+    }
+    .footer h4{
+      font-family:var(--font-body); font-size:.78rem; font-weight:600;
+      letter-spacing:.16em; text-transform:uppercase; color:var(--bg);
+      margin:0 0 1.1rem;
+    }
+    .footer ul{list-style:none; margin:0; padding:0}
+    .footer li{margin-bottom:.55rem}
+    .footer a{color:#B8B0A3}
+    .footer a:hover{color:var(--bg)}
+    .footer .logo{color:var(--bg); display:inline-block; margin-bottom:.8rem}
+    .footer-bottom{
+      border-top:1px solid rgba(250,247,242,.15);
+      padding:1.4rem 0; font-size:.8rem;
+      display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem;
     }
 
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
-        transform: rotate(45deg);
-    }
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px){
+      .hero{padding:3.5rem 0}
+      .hero-grid{grid-template-columns:minmax(0,1fr); gap:3rem}
+      .hero-figure::before{inset:1rem -1rem -1rem 1rem}
+      .tiles{grid-template-columns:1fr}
+      .signals{grid-template-columns:1fr; gap:1.8rem; margin-bottom:3rem}
+      .footer-grid{grid-template-columns:1fr 1fr; padding:3rem 0 2rem}
+      .section{padding:3.5rem 0}
 
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
-        transform: scaleY(0);
+      /* Mobile nav: checkbox-toggled panel */
+      .hamburger{
+        display:flex; flex-direction:column; justify-content:center; gap:5px;
+        width:30px; height:30px; cursor:pointer;
+      }
+      .hamburger span{height:2px; background:var(--ink); display:block}
+      .nav{
+        display:none; position:absolute; top:76px; left:0; right:0;
+        background:var(--bg); border-bottom:1px solid var(--line);
+        flex-direction:column; align-items:stretch; gap:0;
+        padding:1rem 4%; max-height:calc(100vh - 76px); overflow-y:auto;
+      }
+      .nav-toggle:checked ~ .nav{display:flex}
+      .nav-group>button{width:100%; text-align:left; padding:.8rem 0; font-size:1.05rem}
+      .dropdown{
+        display:block; position:static; border:none; box-shadow:none;
+        padding:0 0 .6rem .8rem; background:transparent;
+      }
+      .nav-shop-link{margin:1rem 0; text-align:center}
     }
-
-    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
-        transform: rotate(-45deg);
-    }
-
-}
-
-@media (max-width: 500px){
-    .navbar-container input[type="checkbox"]:checked ~ .logo{
-        display: none;
-    }
-}
-    </style>
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <ul class="menu-items">
-                <li><a href="index.html">Home</a>|</li>
-<li><a href="knobsandhandles.html">Knobs and Handles</a>|</li>
-<li><a href="hooksandhangers.html">Hooks and Hangers</a>|</li>
-<li><a href="statementpieces.html">Statement Pieces</a>|</li>
-<li><a href="metaldoorknockers.html">Metal Door Knockers</a>|</li>
-<li><a href="venetianmirror.html">Venetian Mirror</a>|</li>
-<li><a href="bathroomhardware.html">Bathroom Hardware</a>|</li>
-<li><a href="coaster.html">Coaster</a>|</li>
-<li><a href="wallart.html">Wall Art</a>|</li>
-<li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a>|</li>
-<li><a href="lamps.html">Lamps</a>|</li>
-<li><a href="meditationbowls.html">Meditation Bowls</a>|</li>
-<li><a href="doorstopper.html">Door Stopper</a>|</li>
-<li><a href="kitchenware.html">Kitchenware</a>|</li>
-<li><a href="copperutensils.html">Copper Utensils</a>|</li>
-<li><a href="christmasornaments.html">Christmas Ornaments</a></li>
-            </ul>
+
+  <!-- 1. Announcement bar — kill top purchase anxieties before they form -->
+  <div class="announce">Handmade to order &nbsp;·&nbsp; Ships worldwide &nbsp;·&nbsp; 30-day returns</div>
+
+  <!-- 2. Header — curated wayfinding: 4 groups, not 16 flat links -->
+  <header class="header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">Indian<span class="mark">Shelf</span></a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+      <label class="hamburger" for="nav-toggle"><span></span><span></span><span></span></label>
+      <nav class="nav" aria-label="Main">
+        <div class="nav-group">
+          <button type="button">Hardware</button>
+          <div class="dropdown">
+            <a href="knobsandhandles.html">Knobs &amp; Handles</a>
+            <a href="hooksandhangers.html">Hooks &amp; Hangers</a>
+            <a href="metaldoorknockers.html">Metal Door Knockers</a>
+            <a href="doorstopper.html">Door Stoppers</a>
+            <a href="bathroomhardware.html">Bathroom Hardware</a>
+          </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <div class="col-100">
-            <h1>Home Decor:The Finishing Touch Of Your Home</h1>
-
-            <p>Your home is your sanctuary, a place where you can relax and unwind after a long day. But even the most beautiful home can benefit from a few finishing touches to add personality and style. Here Indianshelf Brings a few <a href="https://www.indianshelf.in/">Home decor</a> ideas that can help you create a space that is both functional and stylish</p>
-            <img src="https://d2ma7w4w9grdob.cloudfront.net/media/60337Antique%20Green%20Brass%20Tree%20Hooks%20for%20Hanging.jpg" alt="brass wall hook"></a>
-            
-            <h2>Knobs & Handles</h2>
-
-<p>Door knobs and handles are often the first thing people see when they enter your home, so it's important to choose ones that you love. There are a variety of styles to choose from, so you can find something that matches the overall look of your <a href="https://www.indianshelf.in/luxury">Luxury home Decor</a>. You can also mix and match different styles to create a unique look.</p>
-
-<h2>Hooks & Hangers</h2>
-
-<p>Hooks and hangers are a practical way to add storage space to your home, and they can also be used to create a stylish focal point. There are a variety of hooks and hangers available, so you can find ones that match the décor of your room. You can also be creative with your placement, such as hanging hooks from a piece of driftwood or a metal sculpture.</p>
-
-<h2>Showpieces</h2>
-
-<p>Showpieces are a great way to add personality and interest to your home. You can choose showpieces that reflect your personal style, such as a collection of antique clocks or a set of vintage teacups. You can also mix and match different pieces to create a unique look.</p>
-
-<h2>Bronze Oil Lamps</h2>
-
-<p>Bronze oil lamps are a classic and elegant way to add a touch of luxury to your <a href="https://www.indianshelf.com">home Decor</a>. They come in a variety of sizes and styles, so you can find one that fits your décor. You can also place them in a prominent location to make a statement.</p>
-
-<h2>Brass Urlis</h2>
-
-<p>Brass urlis are a traditional Indian pot that is used for cooking, storing, and serving food. They can also be used as decorative items, and they add a touch of ethnic flair to any space. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
-
-<h2>Bronze Ganesha</h2>
-
-<p>Bronze Ganesha is a popular Hindu deity who is often depicted as a pot-bellied elephant with a large head. Bronze Ganesha figurines are a popular home decor item, and they are said to bring good luck and prosperity. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
-
-<h2>Bronze God Idols</h2>
-
-<p>Bronze god idols are another popular home decor item. These figurines can be used to represent a variety of Hindu deities, and they are said to bring blessings and protection to the home. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
-
-<h2>Chandeliers</h2>
-
-<p>Chandeliers are a classic way to add elegance and sophistication to a room. They come in a variety of sizes and styles, so you can find one that fits your décor. You should also consider the size of the room when making your selection.</p>
-
-<h2>Door Stoppers</h2>
-
-<p>Door stoppers are a practical way to prevent doors from slamming shut, and they can also be used to add a touch of style to your home. There are a variety of door stoppers available, so you can find ones that match the décor of your room. You can also be creative with your placement, such as placing a door stopper in the shape of a lion's paw at the entrance to your home.</p>
-
-<h2>Door Knockers</h2>
-
-<p>Door knockers are a traditional way to announce your arrival, and they can also be used to add a touch of personality to your home. There are a variety of door knockers available, so you can find ones that match the décor of your room. You should also consider the size of the door when making your selection.</p>
-
-<h2>Pichwai Paintings</h2>
-
-<p>Pichwai paintings are a traditional form of Indian art that is characterized by their vibrant colors and intricate designs. These paintings are often used as home decor, and they add a touch of Indian culture to any space. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
-
-<h2>Radha Krishna Paintings</h2>
-
-<p>Radha Krishna paintings are another popular form of Indian art that depicts the Hindu deities Radha and Krishna. These paintings are often used as home decor, and they add a touch of beauty and romance to any space. They come in a variety of sizes and styles, so you can find one that fits your décor.</p>
-
+        <div class="nav-group">
+          <button type="button">Decor</button>
+          <div class="dropdown">
+            <a href="wallart.html">Wall Art</a>
+            <a href="statementpieces.html">Statement Pieces</a>
+            <a href="venetianmirror.html">Venetian Mirrors</a>
+            <a href="lamps.html">Lamps</a>
+          </div>
         </div>
+        <div class="nav-group">
+          <button type="button">Living</button>
+          <div class="dropdown">
+            <a href="kitchenware.html">Kitchenware</a>
+            <a href="copperutensils.html">Copper Utensils</a>
+            <a href="coaster.html">Coasters</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button type="button">Craft &amp; Ritual</button>
+          <div class="dropdown">
+            <a href="woodenprintingblocks.html">Wooden Printing Blocks</a>
+            <a href="meditationbowls.html">Meditation Bowls</a>
+            <a href="christmasornaments.html">Christmas Ornaments</a>
+          </div>
+        </div>
+        <a class="nav-shop-link" href="https://www.indianshelf.in/">Shop Online</a>
+      </nav>
     </div>
+  </header>
 
-</body>
-</html>
-<!-- partial -->
-  
+  <!-- 3. Hero (HOMEPAGE_COPY.md §1)
+       TODO before launch: replace product shot with the art-directed hero photo —
+       an artisan's hands fitting an antique-green brass knob onto a dark teak door. -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Artisan-made home decor &amp; hardware</p>
+        <h1>Handcrafted in India.<br>At home anywhere.</h1>
+        <p class="hero-sub">Every knob, knocker, lamp, and mirror here is cast, carved, or painted by artisan families we work with directly — made to order, shipped worldwide, and returnable for 30 days if it doesn't elevate the room.</p>
+        <a class="cta" href="#shop">Explore the Collection</a>
+        <span class="cta-micro">Handmade to order · Ships in 5–7 days</span>
+      </div>
+      <figure class="hero-figure">
+        <img src="https://d2ma7w4w9grdob.cloudfront.net/media/44113Hand-Crafted-Rustic-Brass-Tiger-Design-Door-Handle-NMH-436-(1).JPG" alt="Hand-crafted rustic brass tiger door handle, cast by Indian artisans" width="800" height="1000">
+        <figcaption>Hand-cast brass tiger handle · Moradabad workshop</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Above-the-fold trust strip.
+       ⚠ ALL FIGURES ARE PLACEHOLDERS — replace with verified numbers before launch. -->
+  <div class="trust-strip">
+    <div class="container trust-strip-inner">
+      <span><span class="star">★</span> <b>[4.8/5]</b> from <b>[2,000+]</b> verified reviews</span>
+      <span><b>[500+]</b> artisan families</span>
+      <span>Shipping to <b>[40+]</b> countries</span>
+    </div>
+  </div>
+
+  <!-- 4. Category tiles — route the three visitor types fast -->
+  <section class="section" id="shop">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Shop by category</p>
+        <h2>Four rooms of the collection</h2>
+        <p>Curated, not crowded — every piece selected against the same standard: honest materials, made by hand.</p>
+      </div>
+      <div class="tiles">
+        <a class="tile" href="knobsandhandles.html">
+          <img src="https://d2ma7w4w9grdob.cloudfront.net/media/60414Grey%20Golden%20Floral%20Cupboard%20Knobs.jpg" alt="Grey and golden floral ceramic cupboard knobs" loading="lazy">
+          <div class="tile-label"><h3>Hardware</h3><span>Knobs · Hooks · Knockers · Bathroom</span></div>
+        </a>
+        <a class="tile" href="wallart.html">
+          <img src="https://d2ma7w4w9grdob.cloudfront.net/media/51942Handmade-Silver-Glass-Venetian-Round-Sunburst-Wall-Mirror-SVM-43-(1).jpg" alt="Handmade silver glass Venetian sunburst wall mirror" loading="lazy">
+          <div class="tile-label"><h3>Decor</h3><span>Wall Art · Mirrors · Lamps · Statement Pieces</span></div>
+        </a>
+        <a class="tile" href="kitchenware.html">
+          <img src="https://d2ma7w4w9grdob.cloudfront.net/media/60258Islamic-Art-Copper-Bowl-for-Home-Decor-SNF-570-(1).JPG" alt="Hand-engraved copper bowl" loading="lazy">
+          <div class="tile-label"><h3>Living</h3><span>Kitchenware · Copper Utensils · Coasters</span></div>
+        </a>
+        <a class="tile" href="meditationbowls.html">
+          <img src="https://d2ma7w4w9grdob.cloudfront.net/media/59936Engraved-Tibetan-Singing-Bowl-for-Meditation-SNF-022-(1).jpg" alt="Engraved singing bowl made of bell metal" loading="lazy">
+          <div class="tile-label"><h3>Craft &amp; Ritual</h3><span>Printing Blocks · Meditation Bowls · Ornaments</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Trust section (HOMEPAGE_COPY.md §2)
+       ⚠ ALL FIGURES ARE PLACEHOLDERS — replace with verified numbers before launch. -->
+  <section class="section trust-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why IndianShelf</p>
+        <h2>Why homes around the world are finished with IndianShelf</h2>
+      </div>
+
+      <div class="signals">
+        <div class="signal">
+          <span class="num">[XX] years</span>
+          <h3>of craft partnerships</h3>
+          <p>We've sourced from the same workshops in Moradabad, Jaipur, and Saharanpur since [year]; many of our makers are third-generation artisans.</p>
+        </div>
+        <div class="signal">
+          <span class="num">[XXX,XXX]</span>
+          <h3>pieces in homes worldwide</h3>
+          <p>From single ceramic knobs to full trade orders for architects and interior designers in [40+] countries.</p>
+        </div>
+        <div class="signal">
+          <span class="num">Solid</span>
+          <h3>materials, stated plainly</h3>
+          <p>Every listing names its true material — solid cast brass, hand-fired ceramic, real bone, hand-cut glass — never coated zinc or resin sold as metal.</p>
+        </div>
+      </div>
+
+      <!-- ⚠ PLACEHOLDER TESTIMONIAL — replace with a genuine, permission-cleared
+           customer quote and a real installed photo before launch. -->
+      <div class="testimonial">
+        <blockquote>&ldquo;I ordered twelve ceramic knobs for a kitchen renovation, half expecting them to look nothing like the photos. They arrived individually wrapped, heavier than I expected, and honestly more beautiful in person. The whole kitchen turned around them.&rdquo;</blockquote>
+        <cite>— [Customer name], [City] · Verified buyer</cite>
+        <br><span class="placeholder-note">Placeholder — replace with verified customer quote before launch</span>
+      </div>
+
+      <p class="objection">If a piece arrives damaged or simply isn't what you pictured, we replace it or refund it within 30 days — no photographs of packaging required, no restocking fee.</p>
+
+      <div style="text-align:center">
+        <span class="rating-badge"><span class="star">★★★★★</span> [4.8/5] · [2,000+] reviews with customer-installed photos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Buying guide — the original SEO content, preserved and demoted
+         from storefront to reference (blueprint §2, category page pattern) -->
+  <section class="section guide">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Buying guide</p>
+        <h2>Home decor: the finishing touch of your home</h2>
+        <p>Your home is your sanctuary. Even the most beautiful home benefits from a few finishing touches — here's how to choose <a href="https://www.indianshelf.in/">home decor</a> that is both functional and personal.</p>
+      </div>
+
+      <details>
+        <summary>Knobs &amp; handles</summary>
+        <div class="guide-body"><p>Door knobs and handles are often the first thing people touch when they enter your home. There is a wide range of styles to choose from, so you can find hardware that matches the overall look of your <a href="https://www.indianshelf.in/luxury">luxury home decor</a> — or mix and match different styles to create a look that is entirely yours.</p></div>
+      </details>
+      <details>
+        <summary>Hooks &amp; hangers</summary>
+        <div class="guide-body"><p>Hooks and hangers add practical storage while doubling as a stylish focal point. Get creative with placement — hang hooks from a piece of driftwood or pair them with a metal sculpture for an arrangement guests will notice.</p></div>
+      </details>
+      <details>
+        <summary>Showpieces &amp; statement pieces</summary>
+        <div class="guide-body"><p>Showpieces add personality and interest to your home. Choose pieces that reflect your own story — a collection of antique clocks, a set of vintage teacups — and combine them to create a look no catalogue can reproduce.</p></div>
+      </details>
+      <details>
+        <summary>Bronze oil lamps &amp; chandeliers</summary>
+        <div class="guide-body"><p>Bronze oil lamps are a classic, elegant way to bring warmth to your <a href="https://www.indianshelf.com">home decor</a> — place one prominently to make a statement. Chandeliers add formality and light; match the fixture's scale to the room before choosing a style.</p></div>
+      </details>
+      <details>
+        <summary>Brass urlis &amp; bronze idols</summary>
+        <div class="guide-body"><p>Brass urlis are traditional Indian vessels used for cooking, storing, and serving — and they make striking decorative bowls for flowers or floating candles. Bronze Ganesha figurines and other god idols are cherished home decor pieces, said to bring good luck, prosperity, and protection to the home.</p></div>
+      </details>
+      <details>
+        <summary>Door stoppers &amp; door knockers</summary>
+        <div class="guide-body"><p>Door stoppers keep doors from slamming while adding a note of character — try a lion's-paw stopper at your entrance. Door knockers are the traditional way to announce an arrival; size the knocker to the door and let it set the tone for the whole house.</p></div>
+      </details>
+      <details>
+        <summary>Pichwai &amp; Radha Krishna paintings</summary>
+        <div class="guide-body"><p>Pichwai paintings are a traditional Indian art form known for vibrant colors and intricate detail, bringing a piece of living culture to any space. Radha Krishna paintings depict the beloved Hindu deities and add beauty and romance to a room.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 7. Email capture — own the audience; decor cycles are long.
+       TODO: wire the form to your email provider (Mailchimp/Klaviyo) before launch. -->
+  <section class="section email-capture">
+    <div class="container">
+      <h2>The Shelf Notes</h2>
+      <p>One email a month on craft, care, and new arrivals — and 10% off your first order.</p>
+      <form class="email-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="email-fineprint">No spam, ever. Unsubscribe in one click.</p>
+    </div>
+  </section>
+
+  <!-- 8. Footer — the site previously had none -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">Indian<span class="mark">Shelf</span></a>
+          <p>Handcrafted Indian home decor and architectural hardware, made by artisan families and shipped worldwide.</p>
+        </div>
+        <div>
+          <h4>Hardware</h4>
+          <ul>
+            <li><a href="knobsandhandles.html">Knobs &amp; Handles</a></li>
+            <li><a href="hooksandhangers.html">Hooks &amp; Hangers</a></li>
+            <li><a href="metaldoorknockers.html">Metal Door Knockers</a></li>
+            <li><a href="doorstopper.html">Door Stoppers</a></li>
+            <li><a href="bathroomhardware.html">Bathroom Hardware</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Decor &amp; Living</h4>
+          <ul>
+            <li><a href="wallart.html">Wall Art</a></li>
+            <li><a href="statementpieces.html">Statement Pieces</a></li>
+            <li><a href="venetianmirror.html">Venetian Mirrors</a></li>
+            <li><a href="lamps.html">Lamps</a></li>
+            <li><a href="kitchenware.html">Kitchenware</a></li>
+            <li><a href="copperutensils.html">Copper Utensils</a></li>
+            <li><a href="coaster.html">Coasters</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Craft &amp; Shop</h4>
+          <ul>
+            <li><a href="woodenprintingblocks.html">Wooden Printing Blocks</a></li>
+            <li><a href="meditationbowls.html">Meditation Bowls</a></li>
+            <li><a href="christmasornaments.html">Christmas Ornaments</a></li>
+            <li><a href="https://www.indianshelf.in/">Shop online — indianshelf.in</a></li>
+            <li><a href="https://www.indianshelf.com/">Trade &amp; export — indianshelf.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 IndianShelf. All rights reserved.</span>
+        <span>Handmade in India 🪔</span>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
