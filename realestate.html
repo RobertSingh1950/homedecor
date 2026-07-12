@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Estates — Exceptional Homes, Honest Guidance</title>
+  <meta name="description" content="RERA-registered advisory for buying and selling exceptional homes. Transparent fees in writing, one dedicated advisor from first viewing to keys.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!--
+    ══════════════════════════════════════════════════════════════════
+    PLACEHOLDER NOTICE
+    "Meridian Estates" is a placeholder brand name — replace with the
+    real agency name, logo, RERA registration number, and city.
+    Every figure in [brackets] must be replaced with a verified number
+    before launch. All property cards are sample data. All photo slots
+    are grey placeholders awaiting real, owned photography (never stock).
+    ══════════════════════════════════════════════════════════════════
+  -->
+  <style>
+    /* ---------- Design tokens (WEBSITE_BLUEPRINT.md §3, real-estate palette) ---------- */
+    :root{
+      --bg:        #FAF8F4;
+      --bg-deep:   #F0EDE6;
+      --ink:       #191C1A;   /* deep green-black */
+      --ink-soft:  #4E544F;
+      --gold:      #9C7C3C;   /* aged gold — CTAs and accents only */
+      --gold-dark: #81652E;
+      --pine:      #1E3A2F;   /* deep pine for dark sections */
+      --line:      #E1DCD0;
+      --font-display:'Fraunces', Georgia, serif;
+      --font-body:  'Inter', -apple-system, sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--ink);
+      font-family:var(--font-body); font-size:1.06rem; line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{max-width:100%; display:block}
+    a{color:var(--gold); text-decoration:none}
+    a:hover{color:var(--gold-dark)}
+    h1,h2,h3{font-family:var(--font-display); font-weight:600; line-height:1.15; margin:0 0 .5em}
+    .container{max-width:1320px; width:92%; margin:0 auto}
+    .eyebrow{
+      font-size:.78rem; font-weight:600; letter-spacing:.18em;
+      text-transform:uppercase; color:var(--gold); margin-bottom:1rem;
+    }
+    .section{padding:5.5rem 0}
+    .section-head{max-width:46rem; margin-bottom:3rem}
+    .section-head h2{font-size:clamp(1.9rem,3.2vw,2.6rem)}
+    .section-head p{color:var(--ink-soft); margin:0}
+
+    /* ---------- Top bar ---------- */
+    .topbar{
+      background:var(--ink); color:var(--bg); font-size:.82rem;
+      text-align:center; padding:.55rem 1rem; letter-spacing:.04em;
+    }
+    .topbar b{color:#D9C08A; font-weight:600}
+
+    /* ---------- Header ---------- */
+    .header{
+      position:sticky; top:0; z-index:100;
+      background:rgba(250,248,244,.94); backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--line);
+    }
+    .header-inner{display:flex; align-items:center; justify-content:space-between; height:78px}
+    .logo{font-family:var(--font-display); font-size:1.55rem; font-weight:600; color:var(--ink)}
+    .logo:hover{color:var(--ink)}
+    .logo .mark{color:var(--gold)}
+    .nav{display:flex; gap:.4rem; align-items:center}
+    .nav>a{font-size:.95rem; font-weight:500; color:var(--ink); padding:.8rem 1rem}
+    .nav>a:hover{color:var(--gold)}
+    .nav-cta{
+      margin-left:.8rem; font-size:.9rem; font-weight:600; color:#fff;
+      background:var(--gold); padding:.6rem 1.3rem; border-radius:2px;
+      transition:background .2s;
+    }
+    .nav-cta:hover{background:var(--gold-dark); color:#fff}
+    .nav-toggle{display:none}
+    .hamburger{display:none}
+
+    /* ---------- Hero (HOMEPAGE_COPY.md — real-estate adaptation) ---------- */
+    .hero{position:relative; color:#fff; overflow:hidden}
+    .hero-media{
+      position:absolute; inset:0; z-index:-1;
+      /* TODO: replace with a slow 10-second dusk video of a warmly lit home
+         exterior — real property footage, never stock.
+         <video autoplay muted loop playsinline poster="...">              */
+      background:
+        linear-gradient(to bottom, rgba(25,28,26,.55), rgba(25,28,26,.75)),
+        linear-gradient(160deg, #2C4A3B 0%, #1E3A2F 45%, #14261F 100%);
+    }
+    .hero-inner{padding:9rem 0 7rem; max-width:44rem}
+    .hero h1{font-size:clamp(2.6rem,5.4vw,4.4rem); margin-bottom:1.4rem; color:#fff}
+    .hero-sub{font-size:1.14rem; color:#D8DDD8; margin:0 0 2.4rem; max-width:36rem}
+    .cta{
+      display:inline-block; background:var(--gold); color:#fff;
+      font-weight:600; font-size:1rem; letter-spacing:.02em;
+      padding:1rem 2.4rem; border-radius:2px;
+      transition:background .2s, transform .2s;
+    }
+    .cta:hover{background:var(--gold-dark); color:#fff; transform:translateY(-1px)}
+    .cta-micro{display:block; margin-top:.8rem; font-size:.85rem; color:#B9C2BB}
+    .hero-trust{
+      display:flex; flex-wrap:wrap; gap:.6rem 3rem;
+      margin-top:3.5rem; padding-top:1.6rem;
+      border-top:1px solid rgba(255,255,255,.25);
+      font-size:.92rem; color:#B9C2BB;
+    }
+    .hero-trust b{color:#fff; font-weight:600}
+
+    /* ---------- Listings ---------- */
+    .listings{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.8rem}
+    .card{
+      background:#fff; border:1px solid var(--line);
+      transition:box-shadow .25s, transform .25s;
+    }
+    .card:hover{box-shadow:0 18px 44px rgba(25,28,26,.12); transform:translateY(-3px)}
+    .card-photo{
+      aspect-ratio:16/11; display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(150deg, #41604F, #233F33);
+      color:#C9D2CB; font-size:.85rem; letter-spacing:.06em;
+    }
+    .card-body{padding:1.5rem 1.6rem 1.7rem}
+    .card-price{font-family:var(--font-display); font-size:1.45rem; font-weight:600}
+    .card-title{font-size:1rem; font-weight:600; margin:.2rem 0 .3rem}
+    .card-loc{font-size:.88rem; color:var(--ink-soft); margin:0 0 1rem}
+    .card-specs{
+      display:flex; gap:1.4rem; font-size:.85rem; color:var(--ink-soft);
+      border-top:1px solid var(--line); padding-top:1rem;
+    }
+    .card-specs b{color:var(--ink); font-weight:600}
+    .listings-more{text-align:center; margin-top:3rem}
+
+    /* ---------- Process ---------- */
+    .process{background:var(--bg-deep)}
+    .steps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2.5rem}
+    .step .n{
+      font-family:var(--font-display); font-size:2.4rem; color:var(--gold);
+      display:block; margin-bottom:.6rem;
+    }
+    .step h3{font-size:1.2rem}
+    .step p{font-size:.96rem; color:var(--ink-soft); margin:0}
+
+    /* ---------- Trust section (dark pine) ---------- */
+    .trust-section{background:var(--pine); color:var(--bg)}
+    .trust-section .section-head h2{color:var(--bg)}
+    .signals{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2.5rem; margin-bottom:4.5rem}
+    .signal{border-top:1px solid rgba(250,248,244,.25); padding-top:1.6rem}
+    .signal .num{
+      font-family:var(--font-display); font-size:2rem; color:#D9C08A;
+      display:block; margin-bottom:.4rem;
+    }
+    .signal h3{font-size:1.12rem; color:var(--bg)}
+    .signal p{font-size:.95rem; color:#AEBBB1; margin:0}
+    .testimonial{max-width:46rem; margin:0 auto; text-align:center}
+    .testimonial blockquote{
+      font-family:var(--font-display); font-size:clamp(1.25rem,2.2vw,1.55rem);
+      line-height:1.5; margin:0 0 1.4rem;
+    }
+    .testimonial cite{font-style:normal; font-size:.92rem; color:#AEBBB1}
+    .placeholder-note{
+      display:inline-block; margin-top:1rem;
+      font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+      color:#D9C08A; border:1px dashed #D9C08A; padding:.25rem .7rem; border-radius:2px;
+    }
+    .objection{
+      max-width:46rem; margin:3rem auto 0; text-align:center; font-size:1.02rem;
+      border-top:1px solid rgba(250,248,244,.25); padding-top:2.2rem;
+    }
+    .badges{display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap; margin-top:2.2rem}
+    .badge{
+      display:inline-flex; align-items:center; gap:.6rem;
+      padding:.7rem 1.4rem; border:1px solid rgba(250,248,244,.3);
+      border-radius:2px; font-size:.9rem;
+    }
+    .badge .star{color:#D9C08A; letter-spacing:.1em}
+
+    /* ---------- Lead capture ---------- */
+    .lead{background:var(--bg-deep); text-align:center}
+    .lead h2{font-size:clamp(1.8rem,3vw,2.4rem)}
+    .lead p{color:var(--ink-soft); max-width:38rem; margin:0 auto 2.2rem}
+    .lead-form{
+      display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) auto;
+      gap:.8rem; max-width:60rem; margin:0 auto;
+    }
+    .lead-form input, .lead-form select{
+      font:inherit; font-size:.96rem; padding:.9rem 1.1rem;
+      border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:2px;
+    }
+    .lead-form button{
+      font:inherit; font-weight:600; font-size:.96rem; cursor:pointer;
+      background:var(--ink); color:var(--bg); border:none;
+      padding:.9rem 1.8rem; border-radius:2px; transition:background .2s;
+    }
+    .lead-form button:hover{background:#000}
+    .lead-fineprint{font-size:.8rem; color:var(--ink-soft); margin-top:1.1rem}
+
+    /* ---------- Footer ---------- */
+    .footer{background:var(--ink); color:#A9AFA9; font-size:.92rem}
+    .footer-grid{display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; padding:4.5rem 0 3rem}
+    .footer h4{
+      font-size:.78rem; font-weight:600; letter-spacing:.16em;
+      text-transform:uppercase; color:var(--bg); margin:0 0 1.1rem;
+    }
+    .footer ul{list-style:none; margin:0; padding:0}
+    .footer li{margin-bottom:.55rem; overflow-wrap:anywhere}
+    .footer a{color:#A9AFA9}
+    .footer a:hover{color:var(--bg)}
+    .footer .logo{color:var(--bg); display:inline-block; margin-bottom:.8rem}
+    .footer-bottom{
+      border-top:1px solid rgba(250,248,244,.15); padding:1.4rem 0;
+      font-size:.8rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px){
+      .section{padding:3.5rem 0}
+      .hero-inner{padding:5.5rem 0 4.5rem}
+      .listings{grid-template-columns:minmax(0,1fr)}
+      .steps, .signals{grid-template-columns:minmax(0,1fr); gap:1.8rem}
+      .signals{margin-bottom:3rem}
+      .lead-form{grid-template-columns:minmax(0,1fr)}
+      .footer-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr); padding:3rem 0 2rem}
+
+      .hamburger{
+        display:flex; flex-direction:column; justify-content:center; gap:5px;
+        width:30px; height:30px; cursor:pointer;
+      }
+      .hamburger span{height:2px; background:var(--ink); display:block}
+      .nav{
+        display:none; position:absolute; top:78px; left:0; right:0;
+        background:var(--bg); border-bottom:1px solid var(--line);
+        flex-direction:column; align-items:stretch; padding:1rem 4%;
+      }
+      .nav-toggle:checked ~ .nav{display:flex}
+      .nav>a{padding:.8rem 0; font-size:1.05rem}
+      .nav-cta{margin:1rem 0; text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar: regulatory legitimacy + a human phone number, always visible -->
+  <div class="topbar">RERA Registered · <b>[Registration No.]</b> &nbsp;·&nbsp; Speak to an advisor: <b>[+91 XXXXX XXXXX]</b></div>
+
+  <!-- Header — 5 curated items, one CTA -->
+  <header class="header">
+    <div class="header-inner container">
+      <a class="logo" href="realestate.html">Meridian<span class="mark">&nbsp;Estates</span></a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu">
+      <label class="hamburger" for="nav-toggle"><span></span><span></span><span></span></label>
+      <nav class="nav" aria-label="Main">
+        <a href="#homes">Buy</a>
+        <a href="#process">Sell</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Schedule a Viewing</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero — headline, subheadline, CTA, trust strip (HOMEPAGE_COPY.md appendix) -->
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow" style="color:#D9C08A">Residential advisory · [City]</p>
+      <h1>Exceptional homes. Honest guidance. Zero&nbsp;pressure.</h1>
+      <p class="hero-sub">From first viewing to final signature, one dedicated advisor handles everything — transparent fees stated up front, and no commitment until you're completely certain.</p>
+      <a class="cta" href="#homes">Browse Available Homes</a>
+      <span class="cta-micro">Private viewings available this week</span>
+
+      <!-- ⚠ ALL FIGURES ARE PLACEHOLDERS — verify before launch -->
+      <div class="hero-trust">
+        <span><b>[₹XXX crore]</b> in homes sold</span>
+        <span><b>[XX] years</b> in [City]</span>
+        <span><b>[98%]</b> of clients would recommend us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured listings — SAMPLE DATA; replace with live inventory -->
+  <section class="section" id="homes">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Featured homes</p>
+        <h2>A curated selection, not an endless feed</h2>
+        <p>Every home on this page has been walked by our advisors and verified against its title documents. If it's listed, it's real, available, and priced as shown.</p>
+      </div>
+      <div class="listings">
+        <a class="card" href="#contact">
+          <div class="card-photo">Property photo — replace</div>
+          <div class="card-body">
+            <div class="card-price">₹ [X.XX Cr]</div>
+            <p class="card-title">[Project / house name]</p>
+            <p class="card-loc">[Neighbourhood], [City]</p>
+            <div class="card-specs"><span><b>4</b> Bed</span><span><b>4</b> Bath</span><span><b>[3,200]</b> sq ft</span></div>
+          </div>
+        </a>
+        <a class="card" href="#contact">
+          <div class="card-photo">Property photo — replace</div>
+          <div class="card-body">
+            <div class="card-price">₹ [X.XX Cr]</div>
+            <p class="card-title">[Project / house name]</p>
+            <p class="card-loc">[Neighbourhood], [City]</p>
+            <div class="card-specs"><span><b>3</b> Bed</span><span><b>3</b> Bath</span><span><b>[2,450]</b> sq ft</span></div>
+          </div>
+        </a>
+        <a class="card" href="#contact">
+          <div class="card-photo">Property photo — replace</div>
+          <div class="card-body">
+            <div class="card-price">₹ [X.XX Cr]</div>
+            <p class="card-title">[Project / house name]</p>
+            <p class="card-loc">[Neighbourhood], [City]</p>
+            <div class="card-specs"><span><b>5</b> Bed</span><span><b>6</b> Bath</span><span><b>[4,800]</b> sq ft</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="listings-more"><a class="cta" href="#contact">Request the Full Portfolio</a></div>
+    </div>
+  </section>
+
+  <!-- Process — removes the "what happens if I enquire?" anxiety -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps between you and the keys</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="n">01</span>
+          <h3>One conversation</h3>
+          <p>Tell us your budget, your neighbourhoods, and your non-negotiables. You get one dedicated advisor — not a rotating call centre.</p>
+        </div>
+        <div class="step">
+          <span class="n">02</span>
+          <h3>Verified viewings</h3>
+          <p>We shortlist only homes we've walked ourselves and verified against title documents — then arrange private viewings around your schedule.</p>
+        </div>
+        <div class="step">
+          <span class="n">03</span>
+          <h3>Paperwork, handled</h3>
+          <p>Negotiation, registration, and handover managed end to end, with our full fee schedule in writing before you commit to anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust section (HOMEPAGE_COPY.md appendix)
+       ⚠ ALL FIGURES ARE PLACEHOLDERS — verify before launch -->
+  <section class="section trust-section" id="why">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" style="color:#D9C08A">Why Meridian</p>
+        <h2>Trust is the product. Everything else follows.</h2>
+      </div>
+
+      <div class="signals">
+        <div class="signal">
+          <span class="num">RERA</span>
+          <h3>registered — [Registration No.]</h3>
+          <p>Every listing on this site is verified against its title documents before it appears. No exceptions, no "owner said so."</p>
+        </div>
+        <div class="signal">
+          <span class="num">[XXX]</span>
+          <h3>families settled in [City] since [year]</h3>
+          <p>With an average of [XX] days from first viewing to keys — because shortlists built on verified homes move faster.</p>
+        </div>
+        <div class="signal">
+          <span class="num">Fees</span>
+          <h3>in writing before you commit</h3>
+          <p>Our full fee schedule is published on this site — not revealed at signing. What you see on day one is what you pay on closing day.</p>
+        </div>
+      </div>
+
+      <!-- ⚠ PLACEHOLDER TESTIMONIAL — replace with a genuine, permission-cleared
+           client quote before launch. -->
+      <div class="testimonial">
+        <blockquote>&ldquo;We'd been misled by two brokers before. [Name] showed us the actual registry documents at the first meeting and never once pushed us past our budget.&rdquo;</blockquote>
+        <cite>— [Client name], [Neighbourhood]</cite>
+        <br><span class="placeholder-note">Placeholder — replace with verified client quote before launch</span>
+      </div>
+
+      <p class="objection">You will never encounter a fee, charge, or commission on closing day that wasn't in the written schedule we gave you on day one.</p>
+
+      <div class="badges">
+        <span class="badge">🏛️ RERA Registered · [Registration No.]</span>
+        <span class="badge"><span class="star">★★★★★</span> [4.9/5] on Google · [XXX] public reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead capture — the conversion point.
+       TODO: wire to your CRM / email before launch. -->
+  <section class="section lead" id="contact">
+    <div class="container">
+      <p class="eyebrow">Schedule a viewing</p>
+      <h2>Tell us what home means to you</h2>
+      <p>Share a few details and your advisor will call you within one working day — with verified options, not a sales script.</p>
+      <form class="lead-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Your name" required aria-label="Your name">
+        <input type="tel" name="phone" placeholder="Phone number" required aria-label="Phone number">
+        <select name="interest" aria-label="I'm looking to">
+          <option>I'm looking to buy</option>
+          <option>I'm looking to sell</option>
+          <option>I'd like a valuation</option>
+        </select>
+        <button type="submit">Request a Call</button>
+      </form>
+      <p class="lead-fineprint">One advisor, one call. No spam, and your number is never shared.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="realestate.html">Meridian<span class="mark">&nbsp;Estates</span></a>
+          <p>RERA-registered residential advisory in [City]. Exceptional homes, honest guidance, and fees in writing — since [year].</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#homes">Available Homes</a></li>
+            <li><a href="#process">Selling With Us</a></li>
+            <li><a href="#why">Why Meridian</a></li>
+            <li><a href="#contact">Schedule a Viewing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Transparency</h4>
+          <ul>
+            <li><a href="#why">Fee Schedule</a></li>
+            <li><a href="#why">RERA Registration</a></li>
+            <li><a href="#why">Client Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>[+91 XXXXX XXXXX]</li>
+            <li>[hello@yourdomain.com]</li>
+            <li>[Office address, City]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Meridian Estates [placeholder name]. All rights reserved.</span>
+        <span>RERA Reg. [Registration No.]</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
